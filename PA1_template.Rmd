@@ -75,7 +75,13 @@ Note that there are a number of days/intervals where there are missing values (c
 
 1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
 
+```{r}
+sum(is.na(activitydata$steps))
+```
+
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
+
+*Maybe at this point you would like a small break from grading r code? If so, check out this 5 minute surfing video:* https://vimeo.com/53640299
 
 3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 

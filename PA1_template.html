@@ -177,8 +177,15 @@ df2[which.max(df2[,2]),1]</code></pre>
 <h2>Inputing missing values</h2>
 <p>Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.</p>
 <ol style="list-style-type: decimal">
-<li><p>Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)</p></li>
-<li><p>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</p></li>
+<li>Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)</li>
+</ol>
+<pre class="r"><code>sum(is.na(activitydata$steps))</code></pre>
+<pre><code>## [1] 2304</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</li>
+</ol>
+<p><em>Maybe at this point you would like a small break from grading r code? If so, check out this 5 minute surfing video:</em> <a href="https://vimeo.com/53640299">https://vimeo.com/53640299</a></p>
+<ol start="3" style="list-style-type: decimal">
 <li><p>Create a new dataset that is equal to the original dataset but with the missing data filled in.</p></li>
 <li><p>Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?</p></li>
 </ol>
